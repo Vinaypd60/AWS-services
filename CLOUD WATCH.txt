@@ -1,0 +1,38 @@
+                                         ************************CLOUD WATCH***************************
+
+1)Cloud watch is used to monitor performances.
+2)Cloud watch can monitor all the aws services.
+3)Cloud watch is all about alarms, events and logs.
+4)In cloud watch we have different types of monitoring systems.
+  a)Basic Monitoring : every 5min interval data point will check(free)
+  b)Detailed monitoring : Every 1-min interval datapoint it wil check(Chargable)
+
+Lab:
+Create Dashboard
+select widget
+select metrics
+CPU utilization
+create 
+
+Once the cloud watch is created
+we need to create alarms in order to send notifications
+
+Alarms
+create alarms
+select metric
+conditions
+threshold type
+static create than 80%
+trigger alarm
+select alarm
+select action
+ec2-Terminate ec2
+alarm-name
+create alarm
+
+Note:
+Once the alarm is created the EC2 will be monitored and if the CPU% goes above the threshold will sned notification and it will be taken appropraite action.
+
+
+
+

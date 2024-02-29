@@ -1,0 +1,46 @@
+                                     ****************************ROUTE 53***********************************
+
+Route53 is nothing but the DNS service related.
+Example: 
+        HTTP = 80
+        HTTPS = 443
+        DNS = 53
+Thats why they named it as route53.
+
+route53 services is used to map application domain name to machine server IP.
+When will provide domain names for end users.
+when user access domain in browser then ROute53 will route that request to server IP where Application is running.
+
+
+Example:
+       (Actual URL)https://vinay.org.s3 ----> (Beautiful URL)www.vinay.org
+
+This proces is called as domain name servcie mapping.
+
+Note:
+To map DNS we have to purchase domain first.
+In AWS domain charges are depends upon our requirement.(.in .com .info .org .edu)
+We can register the domains minimum.
+
+Procedure to configure DNS mapping:
+1)Register domain usign route53 "reg domain" option.
+2)Goto Billings dashboard and bill amount
+3)Create hosted zone with our domain name.
+
+
+Note:
+1)name servers of vinay.org and hosted zone both should be same servers.
+2)if not site can't be work it throughs an error.
+
+
+
+
+
+
+
+
+
+
+
+
+

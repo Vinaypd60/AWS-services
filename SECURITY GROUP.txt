@@ -1,0 +1,16 @@
+                                            ****************************SECURITY GROUP*******************************
+
+Security Groups are used to configure Inbound and outbound rules for EC2.
+1)Inbound rules will decide who can access our EC2.
+2)Outbound rules will decide what our EC2 can access.
+3)Bydefault all Inbound and outbound traffic is denied in EC2 and outbound traffic is allowed.
+4)If we want to allow the traffic for EC2 then we have configure the Inbound rules.
+      SSH - Port range(22)
+      RDP - 3389
+      HTTP - 80
+      HTTPS - 443
+
+Note:
+Aws will provide some default Security groups.
+Based on our requirement we can create our own Security group and we can attach to EC2.
+

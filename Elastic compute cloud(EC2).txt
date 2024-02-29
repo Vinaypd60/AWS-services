@@ -1,0 +1,119 @@
+                        ******************************************Elastic compute cloud(EC2)*************************************************
+
+
+1.EC2 Stands for Elastic compute cloud.
+2.EC2 services providing VM's for AWS user.
+3.Using Ec2 we can create no.of Virtual machines.
+4.Ec2 providing scalable computing capacity(Increses).
+5.If we use EC2 we need purchase physical pc.
+6.EC2 providing AMI pre-configure machine.
+7.EC2 is regional based services.
+8.Ec2 providing secured instances with Key pair.
+9.Ec2 providing security groups to manages incoming and outgoing traffic fir our instances.
+10.Security groups contains inbound and outbound rules.
+    a)Inbound rules = for incomming traffic 
+    b)outbound rules = for outgoing traffic
+11.In EC2 we need to terminate all the Instances which we have creted.
+12.In the Security group also we need to delete.
+Note:Don't delete default Security group
+
+Example:
+1)our website is running in one server.
+2)everyone sending request to the same server.
+3)load will increase on the server.
+4)if the load increases the server might crash.
+  a)To overcome this problem we need to reduce burden on the server.
+  b)To reduce burden on the server we have to distribute the load.
+  c)To distribut eh the load will use "ELASTIC LOAD BALANCER" ELB.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+                                **********Different states of the instances********************
+Launch
+running(chargeble)
+stop(no bill)
+reboot
+terminate(delete)
+Hibernate
+
+                                 **************EC2 Family********************
+
+1)General instances
+2)Memory Instances
+3)CPU instances
+4)storage instances
+5)GPU instances
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+                                      **************Types of IP'S in EC2*********************
+Ip - Internet protocol
+Ip is nothing but the address of the computer.
+In Aws we have three types of IP'S.
+1)private IP
+2)public IP
+3)Elastic IP
+
+we are launching EC2 in AWS and we are connecting to EC2.
+we need internet connection from our machine to EC2.
+every EC2 having their own IP address.(private)
+
+IP addresses are managed by AWS.
+we can't connect to EC2 instances using Private IP(It is not possible)
+if we want to connect to EC2 from outside then we need public Ip.
+
+Note:
+Private IP is mandatory for every EC2-instances.
+Public IP is optional.
+Public IP is Dynamic and private Ip is static.
+When we restart our EC2 private Ip will not be changes but public IP will changes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

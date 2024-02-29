@@ -1,0 +1,108 @@
+                             **************************AMAZON ELASTIC BLOCK STORE***************************
+
+1)In AWS we have EBS for storing the data permanently(its stored in volumes)
+2)EBS stands for "Elastic block storage".
+3)In EBS we will create volumes to store the data.
+4)volumes behaves like raw.
+5)we can attach volumes to EC2 instances.
+6)volumes are divided into two types.
+  a)ROOT b)EBS
+
+
+EBS:
+It is permanent storage
+No data will be loss
+maximum size 16TB
+for free tier =30gb
+
+Instance store volume:
+temporary storage
+data will not permanent
+instance store volumes are free.
+
+EBS Volumes types:
+1)General purpose volume
+2)throughput 
+3)cloud
+4)magnetic(standard)
+5)provisioned IOPS volume
+
+
+LAB-EBS:
+Create EC2
+Storage root-vol-8GB / add EBS-VOL 5GB
+Connect to EC2
+df -h
+lsdlk
+sudo mkfs -t ext4/dev/xvdb
+sudo mkdir/ app-vol
+sudo mount / dev/xvdb/app-vol
+
+
+This will successfully mount our volume with EC2
+now we need to transsfer the volume
+   -sudo umount / dev /xvdb
+
+Goto volumes
+     - Select 5GB volumes
+     - Actions
+     - Create snapshot
+
+
+
+                                        ---------------Elastic file system----------------------
+Amazon elastic file system is a cloud storage provided by amazon web services designed to provide\
+scalable,elastic concurrent with some restriction and encrypted file storage for use both AWS cloud 
+services and on-premises resources.
+
+
+                                             -------------Network file system--------------
+
+NFS is a distributed system protocol originally developed by sun-microsystem in 1984.
+It allows users on a client computer to access files over a computer network muck like local storage.
+
+LAB-EFS:
+Create two instances accross 2-AZS
+Goto EFS
+Create EFS
+
+EFS needs a port with 2049
+
+Go to SG
+create SG-2049
+Goto EFS 
+Goto NW
+Manage NW
+Add SG-2049
+
+Once SG is added 
+
+Select EFS 
+Selecta attach
+Mount via DNS
+copy the Address and paste it in EC2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

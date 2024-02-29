@@ -1,0 +1,318 @@
+                                           **************************Linux basic*************************
+
+1)Linux OS comes into the market in the year of 1991.
+2)Linux developed by the one student his name is "Linus Torvald"
+3)So many ppl taken linux os source code and re-designed into market with their brand names.(Linux distributions) 
+  Example:Ubuntu cent OS RHEL Federo SUSE Kali etc.
+4)Linux OS is multi-user based OS.
+5)Linux OS is highly secured.
+
+                                           -----------Linux Archietecture-------------
+1)Hardware  = It consist of all the physical devices attached to the system.
+              Example:Hardisk RAM cpu Motherboard.
+2)Kernel    = It is the important component of which will interact with hardware directly.
+3)Shell     = Shell is the mediator between the user and the kernel.
+4)Application = Appli are the utilities which runs on the shell.
+                Example:Notepad browser media player.
+
+
+----Create linux machine on AWS-----
+Open browser
+login into AWS
+service 
+Compute
+Select EC2
+Launch Instance
+Select OS
+Instance type - t2.moicro
+key pair
+Nw - default
+firewall -SG-SSH-22
+Storage - default 
+adv details
+summary - no of instances
+Launch instance
+
+
+-----Connect to EC2-----
+Select to EC2
+connect
+SSH clinet
+Copy SSH address
+
+on the local Machine terminal / CMD PROMOT / POWERSHELL
+open terminal
+goto downloads
+paste SSH addrsss
+Yes
+
+*********************Linux filesystem***********************
+
+In linux OS everything will be treated as a file only.
+Linux files are divided into three types.
+1)Ordinary files = The files which contains the data i.e; .pem .ppk binary(Image audio video)files.
+2)Directory files(Blue-color) = Is nothing but the folders in the liux.
+3)Device files = IN LINUX everything is a file by using this file we can communicate with devices.
+
+-------How to check Files types-------
+To display all the files withits type we will use "ls -l" command.
+
+d-->Directory files
+- --->Ordinary files
+l --->Link files
+
+                            ------Linux files system hierarchy--------
+
+In the linux everything will be treated as a file.
+Every single file and directory starting from root dir(/)
+
+/ = Root directory(Entry point of the file  system)
+bin = User command binaries
+boot = static files of the boot loader
+dev = device files
+etc = system-global configuration files
+home = users home directory
+lib = shared lib
+media = removable media
+mnt = mounted file system
+opt = add on app package sw
+sbin = sysytem binaries
+srv = data for services from system
+tmp = temp files
+usr = user utility and application
+var = var files
+Proc = process files(Kernal info)
+
+                           --------Working with Linux Commands--------
+
+Whoami = it will display the logged in user.
+PWD = Present working directory
+CD .. = change directory
+Date = will dispaly the date
+cal = will display the calculator
+ls = will dispaly the list
+ls -r = will display the files and directories in rev of alphabetical order
+ls -l = will display the long listing of files
+ls -t = will display the files based on last modified data and time.
+ls -ltr = will print old modified dates and time files in the rev order.
+ls -la = will display the hidden files(.)along with all files including(..)
+ls -li (or)i = will display the Inode(Number)
+ls -lf = will display the based upon on type.
+ls -la = except . and ..files.
+ 
+Note:
+We can execute command with multiple options also.
+
+                            ---------Date and time command----------
+
+date = it will print the todays date
+date+%D
+date +%T,%C,%d,%m,%Y,%H,%M,%S
+date +%d-%m-%y
+
+
+
+                               ---------How to create directory---------
+
+mkdir =  to create make directory.
+mkdir dir1 (ls -l)example:Vinay
+cd vinay
+cd .. (Backword or outside of the folder)
+
+                           -------To create files inside the folders----------
+
+mkdir dir1 dir2 dir3
+mkdir dir5/dir22
+rm -r <dir-name> (it will remove the non-empty files)
+tocuh file.txt(it will create empty files)
+cat > file.txt(create a file with content)
+cat >> file.txt (to append the content)
+cat file.txt (to print the content)
+
+Example:Create one file with content
+
+Touch file.txt
+cat > file.txt ---->after that content---->cntrl D
+cat file.txt
+
+
+                                           ---------HEAD COMMAND-----------
+
+The "Head" command will displayed the starting content of a file.
+Bydefault it will display the starting 10-lines of any file.
+
+Example:
+Head file.txt
+head -4 file.txt(it will print 4-lines)
+
+1)Head command for multiple files:
+Head file.txt vinay.txt
+
+2)head c command:
+The head-c command count the no.of bytes of a files.
+example:head -c <num><filename>
+        head -c 30 vinay.txt
+
+
+                                             -----------Tail command-----------
+
+It is used to display the last 10-lines of the one (or) more files.
+Its main purpose is used to read the error msgs.
+
+Example:
+        tail Vinay.txt
+        tail -n 3 Vinay.txt(it will print the 3lines)
+        tail c 8 Vinay.txt
+        tail -f Vinay.txt (latest changes)
+
+
+
+                                                      ------WORD COUNT-------
+
+It contains the word count
+Example:
+        WC Vinay.txt
+         8-lines
+         30-word 
+         225-Char
+
+                                                  --------Copy the files from----------
+
+To copy the files from one to another we will use "CP" command.
+Ex:
+   CP vinay.txt rahul.txt
+
+                                                    --------Both files at a time---------
+
+It can print the both file data
+Exapmle:
+        Cat vinay.txt rahul.txt 
+
+                                          --------Copy the two files data into another file----------
+
+Example:
+        cat Vinay.txt > rahul.txt
+        cat rahul.txt
+
+                                                      ---------Editors----------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

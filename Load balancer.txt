@@ -1,0 +1,76 @@
+                                   ***********************Load balancer****************************
+
+Load balancing is the process of distributing the load to multiple servers.
+in AWS we have 4-types of load balancer.
+1)Application load balancer
+2)network load balancer
+3)Gatewaay load balancer
+4)Classic load balancer(Old one AWS removed)
+
+
+Application LBR:
+if we want to implement LBR for the application with http and https then go for APPLICATION LBR.
+
+Network LBR:
+If we want to implement LBR the ultra performance should go for NW LBR.
+
+Gateway LBR:
+if our application is having third party appliences then go for the Gateway LBR.
+
+
+LAB:
+Goto LBR
+Create LBR
+Application LBR
+Create
+name- test
+scheme-internet-facing
+ip address-IPV4
+NW - Mapping - default - vpc
+security group -HTTP
+Listners and routing 
+select Target group
+
+We need to configure a target-group to select our server.
+
+
+LAB:
+Choose target-instances
+Target - name - test
+VPC default
+protocol version - http1
+health check
+protocol HTTP
+Path1
+
+configure health check settings
+regiestet targets
+select target
+
+create target group
+once the target group is created
+attach this ti listners under LBR
+Create LBR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

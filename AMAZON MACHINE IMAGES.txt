@@ -1,0 +1,20 @@
+                                 *********************************AMAZON MACHINE IMAGES************************************
+
+1)AMI is supported and maintained image provied by AWS that provides the information required to launch an instances.
+2)we must specify an AMI when we launch Instances.
+3)We can launch multiple instances for a single AMI.
+4)When we requires multiple instances with same configuration.
+5)By using images we can save our time to setup instances quickly.
+6)To delete the AMI(Action--->Deregister)
+
+
+LAB:
+select EC2 
+Goto actions
+Image and template
+Create image
+name
+create
+Bydefault images will be in private scope.
+If we make it pubilc all the user can access.
+

@@ -1,0 +1,83 @@
+                                                  ***************AWS INTRODUCTION******************
+
+1)AWS stands for AMAZON WEB SERVICES.
+2)Amazon company is the provider of the AWS cloud.
+3)Aws providing several services required for our appication through web is called AWS.
+4)Aws cloud providing Iaas.
+5)Whatever the Infra we need to host/setup application we can take from AWS.
+
+                                -------------------How many types of accounts we can create---------------------
+1)Root account 
+2)IAM account (Identity access management)
+
+Company will maintain the root account and IAM account will manage the team members.
+
+Note:
+Once the root account is created with root we can create several IAM accounts for managing work in AWS.
+
+In 2006 AWS began offering IT INFRA several to business as Web service know commonly known as CLOUD COMPUTING.
+
+AWS providing all types of services which are required for our application.
+1)Machine    2)Security    3)services  4)Analysis   
+5)DBS        6)Monitoring  7)Networks
+
+
+Note:
+If we use AWS cloud in our project then we can focus on  development and business because Infra we can use in AWS.
+
+Aws providing services accross the globe using regions and availability zones.(AZ)
+a)aws having global Infra(196+ countries)
+b)Regions means geographical location.(26)
+c)AZ means Data centers.(84)
+
+
+Data center is facility that provides shared access to application and data using company network.
+
+Data center:
+It is a physical facility that organization use to house their critical appications of data.
+components:
+Routers switches firewalls storage systems and servers.
+
+Example1:
+We have created one EC2 with Windows
+1)RDP stands for remote desktop connection it is one application in windows.
+2)using RDP we can connect one  windows machine to another using DNS, uname and PWD.
+
+
+What is OS?
+An OS is a SW that acts as a mediator between computer Hardware and the user.
+1)Windows OS(personal usage)
+2)Linux OS(business or servers)
+
+
+Virtualization:
+It is the act of creating a Virtual versions of something at the same abstraction level, including virtual computers Hardware platforms storage devices.   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

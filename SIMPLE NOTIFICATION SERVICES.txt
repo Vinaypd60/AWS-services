@@ -1,0 +1,22 @@
+                               **********************SIMPLE NOTIFICATION SERVICES*************************
+
+AWS SNS is fully managed messaging services for both the Application-to-appication(A2A)and appication-to-person(A2P)communication.
+using this SNS we can send SMS email and mobile notifications.
+
+Lab:
+Goto SNS
+Create TOPIC
+Standard topic
+name
+create
+
+Once the topic is created we need to setup subscriptions
+
+Goto Subscriptions
+create subscriptions
+select topic 
+protocol email
+email(xyz@gmail.com)
+create
+
+once the subscription is created we need ti aollow subscription from our mail.

@@ -1,0 +1,194 @@
+             *****************GIT**************************
+
+GIT is a version control system.
+GIT sw is developed by the linus torvald who developed the linux.
+He created the GIT for the developement of the linux kernel for the contribution with other kernel developers.
+Basically VCS is the SW designed to record changes made to the file over time.
+Git gives us ability to revert the files or the set of files you made changes.
+GIT not only records the source code it also tracks images research papers or any type of files.
+We have three kinds of VCS.
+1)Local VCS
+2)Centralized VCS
+3)Distributed VCS
+
+Local VCS:
+1)Many ppl use this method.
+2)this method is to copy files into another directory.
+3)they keep the files with the timestramp directory.
+4)it is very simple that we maintain the backup.
+
+Centalized VCS:
+1)In order to collaborate with others dev this method is developed.
+2)these systems have a single server that have all versioned files and num of client can take the files from that central place.
+3)for many years this is standard version control.
+
+Distributed VCS:
+1)clients not only checkout the snapshot of the files they can also fully mirror the repository including its full history.
+2)in client system also you can maintain the versions so that when the server is upwe can fully copied back to the server.
+3)Every clone is full backup of all the data.
+
+Note:
+Most operations in GIT requires local files and local resources to operate.
+
+
+                   -------Three states in GIT----------
+
+GIT has three main states that ur files can reside in:modified staged and commited.
+
+Modified: it means that we have changed the file but have not commited it to our DB yet.
+Staged:It means we have marked a modified file in its current version to go into ur next commit snapshot.
+Commited:it is nothing but the data is stored in local DB safely.
+
+                    --------GIT configuration----------
+
+After installing GIT in our system.
+The first thing we need to do is our username and the email address.
+this is bcz when we use git to change the files in the proj.git uses this info to identify who has made the changes to the files.
+The command to add the username and addressis GIT config.
+
+Git uses a series of configurations files determine the behavior.
+
+GIT has multiple level of configuration.
+1)Repository/proj level(local)
+2)user account(global level)
+3)system level(git installation)
+
+check the where the GIT present in the WINDOW:
+cmd:
+git --version
+git config --list --show-origin(system level config folder)
+
+1)GIT INIT:
+Git init cmd is the 1st cmd that we will run on the git.The init cmd is used to create a new repo.it is used to existing proj as a git project.git init cmd can be run outside of the repo.
+ 
+Create a repo for a blank project:---
+                  Syntax:git init
+after that we need to create one file or add on this repo for version control.
+    Syntax:touch <filename>
+To add files to the repo run the git add command.
+   Syntax:git add <filename>
+
+Create a repo for existing project:---
+if we want ti share our proj on a VCS and control it with git then browse our proj directory and start the git cmd line.
+          Syntax:Git init
+note:.git is add to my existing proj.
+We can list all the untracked files by git status cmd.
+          Syntax:git status
+
+
+Create a repo and directory together:---
+        Syntax:git init NewDirectory
+
+
+2)GIT ADD:
+Git add cmd is used to add files content to the index(staging area).This cmd updates the current content of the working tree to the staging area.
+Git add files:----
+Git add cmd is straight forward cmd.it adds files to the staging area.we can add single or multiple files at once in the staging area.
+     Syntax:git add <filename>
+We have created a file for newly created repo in NewDirectory.To create a file .
+        Syntax:touch newfile.txt
+and check the status wheather it is untracked or not by git status cmd.
+        Syntax:git status
+as we know we have created a newfile.txt so to add this file 
+       Syntax:git add newfile.txt
+Git add All:-----
+We can add more that one file in git but we have to run the add cmd repeatedly.git facilitates us with a unique option if the add cmd by which we can add all the avail files at once.
+
+      Syntax: git add -A
+         (or)
+      Syntax: git add.
+
+Add all new and updated files only:----
+git allows us to stage only updated and newly created files at once.we will use the ignore removal option to do so.
+     syntax:git add --ignore-removal
+
+Add all modified and deleted files:---
+     Syntax:Git add -u
+Add files by wildcard:---
+     Syntax:git add *.java
+git undo Add:---
+    Syntax:git reset <filename>
+
+3)Git commit:
+It is used to record the changes in the repo.it is the next cmd after the git add.Every commit contains the index data and the commit msg.
+
+   Syntax:git commit
+Git commit -a:---
+the commit command also provides -a option to specify some commits it is used to commit the snapshots of all changes.
+     Syntax:git commit -a
+     Syntax:git commit -m
+
+4)Git clone:
+in Git cloning is the act of making a copy of any target repo.the target repo can be remote or local.
+     Syntax:git clone <repo URL>
+Git clone repo:
+step1:open github and navigate to the main page of the repo.
+step2:Under the repo name,click on clone or download.
+step3:select the clone with HTTPs section and copy the clone URL for the             repo.
+step4:open git bash and changes the current working dir to your desired loc where we want to create th local copy of the repo.
+step5:use the git clone cmd with repo url to make a copy of the remote repo.
+   Syntax:git clone REPOURL
+
+Git clone branch:----
+Git allows making a copy of only a particular branch from a repository.
+  syntax:git clone -b <branch name><repoURL>
+
+
+5)Git stash:
+sometimes we wnat to switch the branches but we are working on an incomplete part of our current proj.we dont want to make a commit of half-done work.
+Git stashing allows us to do it enables us to switch branches without commiting the current branch.
+   a)Git stash, stash save, stash list, stash apply, stash changes, stash pop,stash drop, stash clear, stash branch
+
+
+6)Git Ignore:
+The term "ignore" is used to specify intentionally untracked files that git should ignore.it doesnt affect the files that already tracked by git.
+
+The file system of git is classified into 3-cate.
+a)Tracked: it means such files that are previously staged or commited.
+b)Untracked:it means such files are not previously staged or commited.
+c)Ignored:Ignored files are such files that are explicitly ignored by git.we have to tell git to ignore such files.
+
+
+7)Git fork:
+A fork is a rough copy of a repository.Forking a repo allows us to freely test and debug with changes without affecting the original project.
+
+When to use git fork:----
+Generally forking a repo allows us to experiment on the proj without affecting the original proj.
+a)propose changes to someone else proj
+b)Use an existing proj as a starting point.
+
+8)Git Repository:
+the repo is like a data structure used by VCS to store metadata for a set of files and dir.
+it contains of the files as well as the history of changes made to those files.
+
+Getting a git repo:----
+1)create a local repo and make it as gir repo
+2)clone a remote repo(already exists on a server)
+
+9)Git index:
+The git index is a staging area between the working dir and repo.it isused to build up a set of changes that uh want to commit  together.
+
+As we mentioned earlier index is a file not a directory so git is not a storing obj into it.instead it stores info abotu the each file in our repo.
+
+mtime: it is the time of the last update/
+file: it is the name of the file.
+wdir: the version if the file in the working dir
+stage: the version of the file in the index.
+repo: the version of the file in the repo.
+
+Token id: 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
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+                                      ***********************ELASTIC BEAN STALK*******************************
+
+
+EBS is a platform within AWS that is used for deploying and scaling web applications.
+In simple terms Paas taken our application code and deploy.
+EBS also fully managed the patching and security updates for those provisioned resources.
+
+Why EBS?
+
+There are many Paas solution in the cloud computing space including Redhat,OpenShift,Google application beanstalk remains one of the leading Paas choices among applications developers.
+
+There is no charge to use EBS to Deploy our application we only charged for resources that are created to support our application.
+
+EBS support platform:
+1)Fast & simple
+2)developer productivity
+3)scaling the demand
+4)control over tools
+
+EBS component:
+1)Applications = A place all the assets like code template code version files.
+
+2)Environment Tiers = There are two tiers instantiated when we deploy on application via elastic beanstalk.
+   a)WEBSERVER ENV
+   b)WORKER ENV
+
+3)Environment health = The health of an env is reported using codes for intant visual recognization that all is weell or not.
+  a)Grey
+  b)Green
+  c)Yellow
+  d)Red
+
+ 
